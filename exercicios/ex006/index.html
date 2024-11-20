@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,14 +30,36 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        div#area:hover {
+        /* div#area:hover {
             background-color: crimson;
-            color: white
-        }
+            color: white 
+        } */
     </style>
 </head>
 <body>
-    <div id="area">Interaja...</div>
+    <div id="area" >Interaja...</div>
+    
+    <script>
+        var area = window.document.getElementById('area')
+
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', saiu)
+
+        function clicar(){
+           // var area = window.document.getElementById('area')
+            area.innerHTML = 'Clicou!'
+            area.style.background = 'crimson'
+        }
+        function entrar(){
+            //var area = window.document.getElementById('area')
+            area.innerHTML = 'Entrou!'
+        }
+        function saiu(){
+            area.innerHTML = 'Saiu!'
+            area.style.background = 'greenyellow'
+        }
+    </script>
 
 </body>
 </html>
