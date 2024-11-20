@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: mediumslateblue;
+            color: rgb(255, 215, 83);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div#area {
+            background-color: greenyellow;
+            color: black;
+            width: 95px;
+            height: 95px;
+            line-height: 95px;
+            text-align: center;
+            font-weight: bolder;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        div#area:hover {
+            background-color: crimson;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <div id="area">Interaja...</div>
+
+</body>
+</html>
+
+<!-- 
+
+onclick => disparado quando recebe um click
+ondblclick => disparado quando click duplo
+onmouseover => disparado quando o mouse está sobre
+onmouseout => disparado quando o mouse sai do objeto
+onmousemove => disparado quando o mouse é movido no elemento
+onmousedown => disparado quando o click do botão for pressionado
+onmouseup = > disparado quando o click do mouse é solto
+onfocus => disparado quando o elemento recebe o foco. Válido para input
+onchange => disparado quando há uma mudança no conteúdo. "Ao mudar"
+onblur => disparado quando o elemento perde o foco
+onkeydown => disparado quando uma tecla é pressionada
+onkeypress => disparado quando uma tecla é pressionada e solta
+onkeyup => disparado quando uma tecla é solta sobre o elemento
+onload => disparado quando a página terminou de ser carregada. Body
+onresize => disparado quando há um redimencionamento da janela 
+
+-->
