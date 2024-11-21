@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fandom Name</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(246, 186, 195);
+            background-image: url(cute-background.avif);
+    
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 100vh;
+            padding: 40px;
+        }
+        .bloco {
+            background-color: rgb(251 238 229);
+            /* box-shadow: 1px 1px 1px 0px black; */
+            width: 520px;
+            height: 420px;
+            text-align: center;
+            padding: 30px;
+        }
+        .bloco img {
+            width: 400px;
+            padding: 20px;
+        }
+        .bloco label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .bloco input#txtgrupo{
+            padding: 3px;
+            width: 120px;
+        }
+        .bloco input {
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        .bloco button {
+            font-size: 1em;
+        }
+        .bloco div#res{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="bloco">
+            <h1>Qual o seu fandom?</h1>
+            <img src="girl-groups.webp" alt="Girlgroups"><br>
+            <label for="txtgrupo">Qual o nome do seu grupo favorito?</label><br>
+            <input type="text" name="txtgrupo" id="txtgrupo"  >
+            <button onclick="resultado()">Enviar</button>
+            <input type="button" name="reset" value="Limpar" id="reset123" onclick="customReset();"/>
+            <div id="res"></div>
+        </div>
+        
+    </main>
+
+    <script>
+        function resultado() {
+            var txtg = document.getElementById('txtgrupo')
+            var grupo = txtg.value
+            var res = document.getElementById ('res')
+
+            if (grupo == 'blackpink') {
+                res.innerText = 'Você é um BLINK!'
+            }
+            if (grupo == 'aespa') {
+                res.innerHTML = 'Você é um MY!'
+            }
+            if (grupo == 'twice'){
+                res.innerHTML = 'Você é um ONCE!'
+            }
+            if (grupo == 'red velvet') {
+                res.innerHTML = 'Você é um REVELUV!'
+            }
+            if (grupo == 'itzy') {
+                res.innerHTML = 'Você é um MINDZY!'
+            }
+            if (grupo == 'mamamoo') {
+                res.innerHTML = 'Você é um MOOMOO!'
+            }
+            if (grupo == 'bts'){
+                res.innerHTML = 'Credo kkk isso lá é grupo que preste. Vá escutar música de verdade fi'
+            }
+        }
+        function customReset() {
+            document.getElementById("txtgrupo").value = "";
+        }
+    </script>
+</body>
+</html>
