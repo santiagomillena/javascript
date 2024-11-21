@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            background-color: mediumpurple;
+            /* 
+            alternativa para centralizar tudo porém como só temos um bloco pra centralizar n usaremos esse método.
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-flow: column nowrap; */
+        }
+        header {
+            color: white;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
+        }
+        div#imagem {
+            /* 
+            uma alternativa para imagem
+            background-image: url(/exercicios/ex013/imagens/tarde4.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%; */
+            background-image: url(imagens/manha250x250.png);
+            height: 250px;
+            width: 250px;
+            margin: auto;
+            
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Hora do Dia</h1>
+    </header>
+    <main>
+        <section>           
+            <div id="msg">
+                <p>Agora são horas</p>
+            </div>
+            <div id="imagem">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> Made by: Millena Santiago</p>
+    </footer>
+    <script>
+       //alert('Olá')
+    </script>
+</body>
+</html>
+
+<!-- Para arredondar as bordas de uma imagem com um raio de 10 pixels, pode utilizar o código CSS: img { border-radius: 10px; } 
+Para arredondar as bordas de um elemento com altura e largura iguais, basta adicionar border-radius: 50% -->
