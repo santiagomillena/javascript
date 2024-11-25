@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Fandom Name</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+        section {
+            background-color: wheat;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            width: 500px;
+        }
+        section > img#fandom {
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Qual o nome do seu fandom?</h1>
+            <img id="fandom" src="imagens/fandoms.jpg" alt="Nome de fandoms">
+            <p>Você sabia que os fãs de um grupo tem um nome? Na verdade, todo artista tem seu fandom. Fandom é um termo usado para se referir a uma comunidade de fãs de um determinado artista. Um exemplo de fandom é o Arianators, que é a base de fãs da cantora americana Ariana Grande. Mas e quanto aos grupos de k-pop? Quer saber o nome do fandom que você faz parte? Vamos descobrir! </p>
+            <div>
+                <label for="txtGroup">Qual seu girlgroup fav?</label><br>
+                <input type="text" name="txtGroup" id="txtGroup">
+                <p>
+                    <input type="button" value="Enviar" onclick="verificar()">
+                    <input type="button" value="Limpar" onclick="customReset()">
+                </p>
+            </div>
+            <div>
+                <img id="photo" src="imagens/interrogacao.png" alt="Imagem interrogacao">
+                <div id="result"></div>
+            </div>
+        </section>
+    </main>
+    <script>
+
+        // Adiciona o ouvinte de evento para capturar o Enter
+        document.getElementById('txtGroup').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') { // Verifica se a tecla pressionada é "Enter"
+        verificar(); // Chama a função "verificar"
+        }
+        });
+
+        // Funções existentes
+        function verificar(){
+            var group = document.getElementById('txtGroup').value
+            var result = document.getElementById('result')
+            var photo = document.querySelector('img#photo')
+
+            if (group.trim() === "") {
+            alert("Por favor, insira algum dado antes de enviar!");
+            return; // Sai da função se o campo estiver vazio
+            }
+            document.getElementById('txtGroup').value = ""; // Limpa o campo de texto
+
+            if (group == 'aespa'){
+                result.innerHTML = 'Você é um MY!'
+                photo.src = 'imagens/aespa250px.png'   
+            } else if ( group == 'blackpink') {
+                result.innerHTML = 'Vecê é um BLINK!'
+                photo.src = 'imagens/blackpink250px.png'
+            } else if (group == 'itzy'){
+                result.innerHTML = 'Você é um MIDZY'
+                photo.src = 'imagens/itzy250px.png'
+            } else if (group == 'mamamoo'){
+                result.innerHTML = 'Você é um <strong>MOOMOO</strong>!'
+                photo.src = 'imagens/mamamoo250px.png'
+            }
+        }
+
+        function customReset() {
+            document.getElementById("txtGroup").value = "";
+        }
+    </script>
+</body>
+</html>

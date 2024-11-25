@@ -1,0 +1,22 @@
+No JavaScript, os métodos getDate(), getMonth(), getFullYear() e getDay() são usados para obter informações sobre a data e hora: 
+
+🔸getDate(): Retorna o dia do mês, de 1 a 31 
+
+🔸getMonth(): Retorna o mês da data, de 0 a 11, onde 0 é janeiro e 11 é dezembro 
+
+🔸getFullYear(): Retorna o ano da data 
+
+🔸getDay(): Retorna o dia da semana, de acordo com a hora local, onde 0 é domingo 
+
+        cost date = new Date; Cria uma nova variável de data chamada now com a data atual
+        document.write("Hoje é " + now.getDay() + ", " + now.getDate() + " de " + now.getMonth() + " de " + now.getFullYear()); Escreve na tela a data atual 
+
+🔸getHours(): Retorna a hora atual
+
+        var hora = agora.getHours()
+        console.log (`Agora são exatamente ${hora} horas.`)
+        if (hora < 5)
+
+Para criar uma nova instância do objeto Date, use a palavra-chave new. Por exemplo, para mostrar a data atual, pode usar o código now = new Date. 
+Para formatar datas em JavaScript, pode usar o objeto Format Date. Por exemplo, para formatar a data no formato curto, use o padrão “MM/DD/YYY”. Para formatar a data no formato longo, use o padrão “MMM DD YYYY”. 
+Para saber os milisegundos decorridos desde 1 de janeiro de 1970, use o método now(). 

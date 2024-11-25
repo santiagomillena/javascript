@@ -10,3 +10,20 @@ if (hora < 5){
 } else {
     console.log ('Boa noite!')
 }
+
+// Para trabalhar com datas e horários em páginas web, é possível usar o objeto Date e os seus métodos:
+// Métodos:
+
+// getDate() Retorna o dia atual do mês (de 1 a 31)
+
+// getMonth() Retorna o mês da data especificada, mas os valores são indexados em zero (ou seja, de 0 a 11)
+
+// getFullYear() Retorna o ano atual do sistema
+
+// getHours(): Retorna a hora atual
+
+// Exemplos:
+
+// now = new Date; Cria uma nova variável de data chamada now com a data atual
+
+// document.write("Hoje é " + now.getDay() + ", " + now.getDate() + " de " + now.getMonth() + " de " + now.getFullYear()); Escreve na tela a data atual 
