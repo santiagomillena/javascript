@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <style>
+        *{
+          
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: darkslateblue;
+        }
+        header {
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.531);
+        }
+        section {
+            font-size: 14pt;
+            background-color: aliceblue;
+            width: 500px;
+            border-radius: 4px;
+            margin: auto;
+            box-shadow: 1px 1px 0px black;
+            padding: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <p>
+            <label for="inputStartCount">Início:</label>
+            <input type="number" name="inputStartCount" id="inputStartCount" min="1">
+        </p>
+        <p>
+            <label for="inputEndCount">Fim:</label>
+            <input type="number" name="inputEndCount" id="inputEndCount" min="1">
+        </p>
+        <p>
+            <label for="inputStep">Passos:</label>
+            <input type="number" name="inputStep" id="inputStep" min="1">
+        </p>
+        <p>
+            <input type="button" value="Contar" onclick="verificar()">
+        </p>
+        <div id="result">
+            Preparando a contagem...
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
