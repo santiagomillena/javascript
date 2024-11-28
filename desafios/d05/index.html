@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        *{
+          
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: darkslateblue;
+        }
+        header {
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.531);
+        }
+        section {
+            font-size: 14pt;
+            background-color: aliceblue;
+            width: 500px;
+            border-radius: 4px;
+            margin: auto;
+            box-shadow: 1px 1px 0px black;
+            padding: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <p>
+            <label for="inputNumber">Número:</label>
+            <input type="number" name="inputNumber" id="inputNumber" min="0">
+            <input type="button" value="Gerar Tabuada" onclick="verificar()">
+        </p>
+        <div>
+            <select name="seltab" id="seltab">Digite um número</select>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
